@@ -5,9 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Membuat Recipe APP</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="recipe" id="recipe" placeholder="Type Dish Name (Ex. Pizza)">
+        </div>
+        <p class="display-recipe">Result will be displayed here...</p>
+        <div class="info-box">
+            <div class="food-img">
+                <img src="" alt="Loading...">
+            </div>
+            <div class="food-name">
+                <h3 class="mealName"></h3>
+                <p class="area"></p>
+            </div>
+            <div class="ingredients-box">
     
+            </div>
+            <button class="view-recipe">View Recipe</button>
+            <div class="instruction-box">
+                <button class="close-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <span class="instruction"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js.js"></script>
     <script src="https://kit.fontawesome.com/1adb3e2054.js" crossorigin="anonymous"></script>
 </body>
 </html>

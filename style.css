@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAEED1;
+    font-family: 'Hedvig Letters Serif', sans-serif;
+}
+
+.container {
+    padding: 20px;
+    width: 300px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container .search-box {
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+}
+
+.container .search-box i {
+    color: grey;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.container .search-box input {
+    all: unset;
+    height: 45px;
+    width: 200px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.container .food-img {
+    height: 130px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.container .food-img img {
+    height: 130px;
+    width: 160px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.container .food-name {
+    height: 50px;
+    padding: 10px;
+    background: #F65e12;
+    color: #fff;
+    font-size: 12px;
+    width: 250px;
+    margin: auto;
+    border-radius: 3px;
+    white-space: nowrap;
+    text-align: center;
+    z-index: 1;
+}
