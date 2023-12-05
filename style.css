@@ -13,7 +13,7 @@ body {
 
 .container {
     padding: 20px;
-    width: 300px;
+    width: 355px;
     background: #fff;
     position: absolute;
     top: 50%;
@@ -28,6 +28,7 @@ body {
     border: 1px solid grey;
     border-radius: 5px;
     padding: 5px;
+    display: flex;
     align-items: center;
 }
 
@@ -40,18 +41,26 @@ body {
 .container .search-box input {
     all: unset;
     height: 45px;
-    width: 200px;
+    width: 260px;
     font-size: 14px;
     padding-left: 10px;
 }
 
+.container .display-recipe {
+    color: grey;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .container .food-img {
-    height: 130px;
+    height: 170px;
     width: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
+    margin-bottom: 10px;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
     margin-top: 20px;
@@ -59,14 +68,14 @@ body {
 }
 
 .container .food-img img {
-    height: 130px;
+    height: 150px;
     width: 160px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
 
 .container .food-name {
-    height: 50px;
+    height: 55px;
     padding: 10px;
     background: #F65e12;
     color: #fff;
@@ -77,4 +86,102 @@ body {
     white-space: nowrap;
     text-align: center;
     z-index: 1;
+}
+
+.container .food-name h3 {
+    margin-top: 2px;
+}
+
+.container .ingredients-box {
+    margin-left: 2em;
+    line-height: 1em;
+    margin-top: 10px;
+}
+
+.container .ingredients-box ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.7em 3em;
+    padding: 1.2em 0 0 1.2em;
+    font-size: 1em;
+    margin-left: 9px;
+    margin-top: 5px;
+}
+
+.container .ingredients-box li {
+    font-size: 12px;
+}
+
+.container .view-recipe {
+    all: unset;
+    height: 55px;
+    width: 100px;
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid #F65e12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    float: right;
+    color: #F65e12;
+    margin-right: 7px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.container .instructions-box {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    padding: 25px;
+    font-size: 14px;
+    overflow: hidden;
+    overflow-y: scroll;
+    transition: all .2s;
+}
+
+.container .instructions-box::-webkit-scrollbar {
+    display: none;
+}
+
+.container .instructions-box .close-btn {
+    all: unset;
+    height: 70px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: fixed;
+    background: #F65e12;
+    z-index: 1;
+    cursor: pointer;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 315.5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container .instructions {
+    position: relative;
+    top: 5px;
+    font-size: 1em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Hedvig Letters Serif', sans-serif;
+}
+
+.container .info-box {
+    display: none;
+}
+
+::selection {
+    background: rgb(100, 149, 237, 0.8);
+    color: #fff;
+    display: n;
 }
